@@ -46,6 +46,23 @@ export default function Publications() {
             </li>
             <li className="p-5 rounded-2xl bg-panel border border-border-main shadow-sm hover:shadow-md transition-shadow group flex flex-col md:flex-row md:items-start md:justify-between gap-4">
               <p className="text-[15px] leading-relaxed text-slate-700 flex-1">
+                Martín Hernández, I. (2025). Desarrollo y aplicación de herramientas bioinformáticas para la predicción de estructura de bucles de proteínas [Doctoral dissertation, Universidad Complutense de Madrid].
+              </p>
+              <div className="hidden md:flex gap-2 shrink-0">
+                <a href="/pdf/Ivan.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
+                  PDF
+                </a>
+                <a href="https://hdl.handle.net/20.500.14352/136566" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-blue/10 text-blue hover:bg-blue/20 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
+                  Link
+                </a>
+              </div>
+              <div className="flex md:hidden gap-2 shrink-0">
+                <a href="/pdf/Ivan.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-red-50 text-red-600 rounded-lg text-xs font-semibold">PDF</a>
+                <a href="https://hdl.handle.net/20.500.14352/136566" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-blue/10 text-blue rounded-lg text-xs font-semibold">Link</a>
+              </div>
+            </li>
+            <li className="p-5 rounded-2xl bg-panel border border-border-main shadow-sm hover:shadow-md transition-shadow group flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+              <p className="text-[15px] leading-relaxed text-slate-700 flex-1">
                 M Alcorlo, JR Luque-Ortega, F Gago, A Ortega, M Castellanos, P Chacón..et. al. (2024) Flexible structural arrangement and DNA-binding properties of protein p6 from Bacillus subtillis phage φ29.  Nucleic Acids Research 52 (4), 2045-2065
               </p>
               <div className="hidden md:flex gap-2 shrink-0">
