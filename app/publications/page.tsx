@@ -824,9 +824,13 @@ export default function Publications() {
                 <a href="/pdf/Tesis_Garzon.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
                   PDF
                 </a>
+                <a href="https://hdl.handle.net/20.500.14352/47396" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-blue/10 text-blue hover:bg-blue/20 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
+                  Link
+                </a>
               </div>
               <div className="flex md:hidden gap-2 shrink-0">
                 <a href="/pdf/Tesis_Garzon.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-red-50 text-red-600 rounded-lg text-xs font-semibold">PDF</a>
+                <a href="https://hdl.handle.net/20.500.14352/47396" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-blue/10 text-blue rounded-lg text-xs font-semibold">Link</a>
               </div>
             </li>
             <li className="p-5 rounded-2xl bg-panel border border-border-main shadow-sm hover:shadow-md transition-shadow group flex flex-col md:flex-row md:items-start md:justify-between gap-4">
