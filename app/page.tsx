@@ -23,7 +23,7 @@ export default function Home() {
             <Link href="/research" className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full font-bold bg-primary text-white shadow-panel hover:-translate-y-0.5 transition-transform">
               Explore Research
             </Link>
-            <Link href="/software" className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full font-bold bg-white text-blue border border-[rgba(90,141,255,0.25)] hover:-translate-y-0.5 transition-transform">
+            <Link href="/tools" className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full font-bold bg-white text-blue border border-[rgba(90,141,255,0.25)] hover:-translate-y-0.5 transition-transform">
               View Open Source
             </Link>
           </div>
