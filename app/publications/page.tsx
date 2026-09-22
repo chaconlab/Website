@@ -443,6 +443,11 @@ export default function Publications() {
           <ul className="space-y-4">
             <li className="p-5 rounded-2xl bg-panel border border-border-main shadow-sm hover:shadow-md transition-shadow group flex flex-col md:flex-row md:items-start md:justify-between gap-4">
               <p className="text-[15px] leading-relaxed text-slate-700 flex-1">
+                López-Blanco J.R. and Chacón P. (2015) Structural modeling from electron microscopy data. WIREs Comput Mol Sci, 5: 62–81.
+              </p>
+            </li>
+            <li className="p-5 rounded-2xl bg-panel border border-border-main shadow-sm hover:shadow-md transition-shadow group flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+              <p className="text-[15px] leading-relaxed text-slate-700 flex-1">
                 García Sánchez, S. (2015). Optimización de procesos de ajuste en microscopía electrónica y cribado virtual de proteínas mediante arquitecturas gráficas [Doctoral dissertation, Universidad Rey Juan Carlos].
               </p>
               <div className="hidden md:flex gap-2 shrink-0">
