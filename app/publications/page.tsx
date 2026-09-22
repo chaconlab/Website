@@ -289,7 +289,7 @@ export default function Publications() {
             </li>
             <li className="p-5 rounded-2xl bg-panel border border-border-main shadow-sm hover:shadow-md transition-shadow group flex flex-col md:flex-row md:items-start md:justify-between gap-4">
               <p className="text-[15px] leading-relaxed text-slate-700 flex-1">
-                Pablo Solar Rodríguez (2017). Autonomous University of Barcelona, Open University of Catalonia. MSc Thesis. Development, optimization, and integration of molecular fitting tools and models in UCSF Chimera.
+                Solar Rodríguez, P. (2017). Development, optimization, and integration of molecular fitting tools and models in UCSF Chimera [Master's thesis, Autonomous University of Barcelona, Open University of Catalonia].
               </p>
               <div className="hidden md:flex gap-2 shrink-0">
                 <a href="/pdf/PSolar2017.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
@@ -319,7 +319,7 @@ export default function Publications() {
             </li>
             <li className="p-5 rounded-2xl bg-panel border border-border-main shadow-sm hover:shadow-md transition-shadow group flex flex-col md:flex-row md:items-start md:justify-between gap-4">
               <p className="text-[15px] leading-relaxed text-slate-700 flex-1">
-                Erney Ramírez-Aportela (2016) Universidad Autónoma de Madrid. Thesis. Dinámica de los Filamentos de FtsZ y Búsqueda Racional de Inhibidores Sintéticos con Actividad Antibacteriana(Spanish).
+                Ramírez-Aportela, E. (2016). Dinámica de los Filamentos de FtsZ y Búsqueda Racional de Inhibidores Sintéticos con Actividad Antibacteriana [Doctoral dissertation, Universidad Autónoma de Madrid].
               </p>
               <div className="hidden md:flex gap-2 shrink-0">
                 <a href="/pdf/erney2016.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
@@ -443,7 +443,7 @@ export default function Publications() {
           <ul className="space-y-4">
             <li className="p-5 rounded-2xl bg-panel border border-border-main shadow-sm hover:shadow-md transition-shadow group flex flex-col md:flex-row md:items-start md:justify-between gap-4">
               <p className="text-[15px] leading-relaxed text-slate-700 flex-1">
-                Santiago García Sánchez (2015) Universidad Juan Carlos I. Thesis. Optimización de procesos de ajuste en microscopía electrónica y cribado virtual de proteínas mediante arquitecturas gráficas(Spanish).
+                García Sánchez, S. (2015). Optimización de procesos de ajuste en microscopía electrónica y cribado virtual de proteínas mediante arquitecturas gráficas [Doctoral dissertation, Universidad Rey Juan Carlos].
               </p>
               <div className="hidden md:flex gap-2 shrink-0">
                 <a href="/pdf/santi2015.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
@@ -728,15 +728,19 @@ export default function Publications() {
             </li>
             <li className="p-5 rounded-2xl bg-panel border border-border-main shadow-sm hover:shadow-md transition-shadow group flex flex-col md:flex-row md:items-start md:justify-between gap-4">
               <p className="text-[15px] leading-relaxed text-slate-700 flex-1">
-                López-Blanco JR (2012) UCM. Thesis. Nuevos métodos para el ajuste flexible de estructuras macromoleculares a distintas resoluciones empleando modos normales de vibración en coordenadas internas.(Spanish).
+                López-Blanco, J.R. (2012). Nuevos métodos para el ajuste flexible de estructuras macromoleculares a distintas resoluciones empleando modos normales de vibración en coordenadas internas [Doctoral dissertation, Universidad Complutense de Madrid].
               </p>
               <div className="hidden md:flex gap-2 shrink-0">
                 <a href="/pdf/Tesis_JoseRamonLopezBlanco_2012_public.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
                   PDF
                 </a>
+                <a href="https://hdl.handle.net/20.500.14352/48141" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-blue/10 text-blue hover:bg-blue/20 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
+                  Link
+                </a>
               </div>
               <div className="flex md:hidden gap-2 shrink-0">
                 <a href="/pdf/Tesis_JoseRamonLopezBlanco_2012_public.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-red-50 text-red-600 rounded-lg text-xs font-semibold">PDF</a>
+                <a href="https://hdl.handle.net/20.500.14352/48141" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-blue/10 text-blue rounded-lg text-xs font-semibold">Link</a>
               </div>
             </li>
             <li className="p-5 rounded-2xl bg-panel border border-border-main shadow-sm hover:shadow-md transition-shadow group flex flex-col md:flex-row md:items-start md:justify-between gap-4">
@@ -814,7 +818,7 @@ export default function Publications() {
             </li>
             <li className="p-5 rounded-2xl bg-panel border border-border-main shadow-sm hover:shadow-md transition-shadow group flex flex-col md:flex-row md:items-start md:justify-between gap-4">
               <p className="text-[15px] leading-relaxed text-slate-700 flex-1">
-                Garzón J.I.. (2010) UCM. Thesis. Desarrollo de nuevas metodologías para el ajuste de estructuras tridimensionales en biomoléculas sobre infratestructuras Grid.(Spanish).
+                Garzón, J.I. (2010). Desarrollo de nuevas metodologías para el ajuste de estructuras tridimensionales en biomoléculas sobre infratestructuras Grid [Doctoral dissertation, Universidad Complutense de Madrid].
               </p>
               <div className="hidden md:flex gap-2 shrink-0">
                 <a href="/pdf/Tesis_Garzon.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
@@ -1224,7 +1228,7 @@ export default function Publications() {
             </li>
             <li className="p-5 rounded-2xl bg-panel border border-border-main shadow-sm hover:shadow-md transition-shadow group flex flex-col md:flex-row md:items-start md:justify-between gap-4">
               <p className="text-[15px] leading-relaxed text-slate-700 flex-1">
-                Chacón P. (1999) PhD Thesis: &quot;Determinación de forma y tamaño de proteínas en disolución mediante dispersión de rayos-x y algoritmos genéticos&quot;. [Shape and size determination of proteins in solution from x-ray scattering and genetic algorithms]. Chemistry Faculty. University Complutense of Madrid.
+                Chacón, P. (1999). Determinación de forma y tamaño de proteínas en disolución mediante dispersión de rayos-x y algoritmos genéticos [Doctoral dissertation, Universidad Complutense de Madrid].
               </p>
               <div className="hidden md:flex gap-2 shrink-0">
               </div>
