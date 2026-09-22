@@ -35,7 +35,8 @@ export default function Team() {
     "Santiago García Sánchez",
     "Pieter Chys",
     "Erney Ramírez Aportela",
-    "Pablo Solar Rodríguez"
+    "Pablo Solar Rodríguez",
+    "A.J. Canosa-Valls"
   ];
 
   return (

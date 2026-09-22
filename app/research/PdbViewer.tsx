@@ -8,24 +8,34 @@ export default function PdbViewer({ url }: { url: string }) {
   const [scriptLoaded, setScriptLoaded] = useState(false);
 
   useEffect(() => {
+    // If script is already globally available but state isn't updated yet
+    if (!scriptLoaded && typeof window !== 'undefined' && (window as any).$3Dmol) {
+      setScriptLoaded(true);
+      return;
+    }
+
     if (!scriptLoaded || !viewerRef.current) return;
     
-    // Check if 3Dmol is available
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    // Prevent double initialization in React Strict Mode which crashes WebGL
+    if (viewerRef.current.innerHTML !== "") {
+      viewerRef.current.innerHTML = "";
+    }
+    
+    let viewer: any = null;
+
     if (typeof window !== 'undefined' && (window as any).$3Dmol) {
       try {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const viewer = (window as any).$3Dmol.createViewer(viewerRef.current, {
+        viewer = (window as any).$3Dmol.createViewer(viewerRef.current, {
           backgroundColor: 'white'
         });
         
-        // Fetch and load the PDB data
         fetch(url)
           .then(res => {
             if (!res.ok) throw new Error("Failed to load PDB file");
             return res.text();
           })
           .then(data => {
+            if (!viewer) return;
             viewer.addModelsAsFrames(data, "pdb");
             viewer.setStyle({}, { cartoon: { color: 'spectrum' } });
             viewer.zoomTo();
@@ -38,14 +48,21 @@ export default function PdbViewer({ url }: { url: string }) {
         console.error("Error initializing 3Dmol viewer:", err);
       }
     }
+
+    // Cleanup function on unmount
+    return () => {
+      if (viewer) {
+        viewer.removeAllModels();
+      }
+    };
   }, [scriptLoaded, url]);
 
   return (
     <div className="relative w-full aspect-video md:aspect-[4/3] bg-white overflow-hidden group cursor-move">
-      {/* Script loaded with lazyOnload to not block the main thread */}
+      {/* Load script immediately after page becomes interactive */}
       <Script 
         src="https://3Dmol.org/build/3Dmol-min.js" 
-        strategy="lazyOnload"
+        strategy="afterInteractive"
         onLoad={() => setScriptLoaded(true)}
       />
       

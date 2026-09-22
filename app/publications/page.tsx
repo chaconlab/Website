@@ -7,7 +7,7 @@ export default function Publications() {
         <div className="flex flex-col gap-4 text-sm text-slate-600 bg-white/50 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-sm w-fit">
           <div className="flex flex-wrap items-center gap-2">
             <span className="font-semibold text-slate-800">Jump to:</span>
-            <a href="#2022-2024" className="hover:text-primary transition-colors">2022-2024</a> <span className="text-slate-300">|</span>
+            <a href="#2022-2026" className="hover:text-primary transition-colors">2022-2026</a> <span className="text-slate-300">|</span>
             <a href="#2020-2016" className="hover:text-primary transition-colors">2020-2016</a> <span className="text-slate-300">|</span>
             <a href="#2015-2011" className="hover:text-primary transition-colors">2015-2011</a> <span className="text-slate-300">|</span>
             <a href="#2010-2006" className="hover:text-primary transition-colors">2010-2006</a> <span className="text-slate-300">|</span>
@@ -25,18 +25,39 @@ export default function Publications() {
 
       <div className="space-y-12">
         <section>
-          <h2 id="2022-2024" className="scroll-mt-24 text-2xl font-bold mb-6 text-text-main border-b border-border-main pb-2">2022-2024</h2>
+          <h2 id="2022-2026" className="scroll-mt-24 text-2xl font-bold mb-6 text-text-main border-b border-border-main pb-2">2022-2026</h2>
           <ul className="space-y-4">
+            <li className="p-5 rounded-2xl bg-panel border border-border-main shadow-sm hover:shadow-md transition-shadow group flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+              <p className="text-[15px] leading-relaxed text-slate-700 flex-1">
+                Asensio-López J, Rapún-Araiz B, Euba B, Domínguez-San Pedro A, Sanmartín Á, Gil-Campillo C, San León D, Chacón P, Almagro G, Ardá A, Burgui S, Lasa I, Toledo-Arana A, Garmendia J. (2026) Haemophilus influenzae tryptophan biosynthesis is required for lung infection. Frontiers in Cellular and Infection Microbiology 16, 1787089
+              </p>
+              <div className="hidden md:flex gap-2 shrink-0">
+                <a href="/pdf/2026_Frontiers.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
+                  PDF
+                </a>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/42499541/" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-blue/10 text-blue hover:bg-blue/20 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
+                  Link
+                </a>
+              </div>
+              <div className="flex md:hidden gap-2 shrink-0">
+                <a href="/pdf/2026_Frontiers.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-red-50 text-red-600 rounded-lg text-xs font-semibold">PDF</a>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/42499541/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-blue/10 text-blue rounded-lg text-xs font-semibold">Link</a>
+              </div>
+            </li>
             <li className="p-5 rounded-2xl bg-panel border border-border-main shadow-sm hover:shadow-md transition-shadow group flex flex-col md:flex-row md:items-start md:justify-between gap-4">
               <p className="text-[15px] leading-relaxed text-slate-700 flex-1">
                 M Alcorlo, JR Luque-Ortega, F Gago, A Ortega, M Castellanos, P Chacón..et. al. (2024) Flexible structural arrangement and DNA-binding properties of protein p6 from Bacillus subtillis phage φ29.  Nucleic Acids Research 52 (4), 2045-2065
               </p>
               <div className="hidden md:flex gap-2 shrink-0">
+                <a href="/pdf/2024_NARS.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
+                  PDF
+                </a>
                 <a href="https://academic.oup.com/nar/article/52/4/2045/7590920" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-blue/10 text-blue hover:bg-blue/20 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
                   Link
                 </a>
               </div>
               <div className="flex md:hidden gap-2 shrink-0">
+                <a href="/pdf/2024_NARS.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-red-50 text-red-600 rounded-lg text-xs font-semibold">PDF</a>
                 <a href="https://academic.oup.com/nar/article/52/4/2045/7590920" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-blue/10 text-blue rounded-lg text-xs font-semibold">Link</a>
               </div>
             </li>
@@ -45,11 +66,15 @@ export default function Publications() {
                 IM Hernández, Y Dehouck, U Bastolla, JR López-Blanco, P Chacón (2023) Predicting protein stability changes upon mutation using a simple orientational potential Bioinformatics 39 (1), 1-7
               </p>
               <div className="hidden md:flex gap-2 shrink-0">
+                <a href="/pdf/2023_bioinf.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
+                  PDF
+                </a>
                 <a href="https://academic.oup.com/bioinformatics/article/39/1/btad011/6984713" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-blue/10 text-blue hover:bg-blue/20 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
                   Link
                 </a>
               </div>
               <div className="flex md:hidden gap-2 shrink-0">
+                <a href="/pdf/2023_bioinf.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-red-50 text-red-600 rounded-lg text-xs font-semibold">PDF</a>
                 <a href="https://academic.oup.com/bioinformatics/article/39/1/btad011/6984713" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-blue/10 text-blue rounded-lg text-xs font-semibold">Link</a>
               </div>
             </li>
@@ -58,11 +83,15 @@ export default function Publications() {
                 Z Gao, C Tan, P Chacon, SZ Li (2023) Toward effective and efficient protein inverse folding. arXiv preprint arXiv:2209.12643
               </p>
               <div className="hidden md:flex gap-2 shrink-0">
+                <a href="/pdf/2023_Pi.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
+                  PDF
+                </a>
                 <a href="https://arxiv.org/abs/2209.12643" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-blue/10 text-blue hover:bg-blue/20 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
                   Link
                 </a>
               </div>
               <div className="flex md:hidden gap-2 shrink-0">
+                <a href="/pdf/2023_Pi.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-red-50 text-red-600 rounded-lg text-xs font-semibold">PDF</a>
                 <a href="https://arxiv.org/abs/2209.12643" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-blue/10 text-blue rounded-lg text-xs font-semibold">Link</a>
               </div>
             </li>
@@ -71,11 +100,15 @@ export default function Publications() {
                 JR López-Blanco, Y Dehouck, U Bastolla, P Chacón (2023) Normal Mode Analysis for Fast Loop Conformational Sampling. Journal of Chemical Information and Modeling 62 (18), 4561–4568
               </p>
               <div className="hidden md:flex gap-2 shrink-0">
+                <a href="/pdf/2022_JCIM.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
+                  PDF
+                </a>
                 <a href="https://pubs.acs.org/doi/full/10.1021/acs.jcim.2c00870" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-blue/10 text-blue hover:bg-blue/20 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
                   Link
                 </a>
               </div>
               <div className="flex md:hidden gap-2 shrink-0">
+                <a href="/pdf/2022_JCIM.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-red-50 text-red-600 rounded-lg text-xs font-semibold">PDF</a>
                 <a href="https://pubs.acs.org/doi/full/10.1021/acs.jcim.2c00870" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-blue/10 text-blue rounded-lg text-xs font-semibold">Link</a>
               </div>
             </li>
@@ -275,9 +308,13 @@ export default function Publications() {
                 <a href="/pdf/erney2016.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
                   PDF
                 </a>
+                <a href="https://repositorio.uam.es/entities/publication/e00b8e19-5e70-4c48-810a-084e164901eb" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-blue/10 text-blue hover:bg-blue/20 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
+                  Link
+                </a>
               </div>
               <div className="flex md:hidden gap-2 shrink-0">
                 <a href="/pdf/erney2016.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-red-50 text-red-600 rounded-lg text-xs font-semibold">PDF</a>
+                <a href="https://repositorio.uam.es/entities/publication/e00b8e19-5e70-4c48-810a-084e164901eb" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-blue/10 text-blue rounded-lg text-xs font-semibold">Link</a>
               </div>
             </li>
             <li className="p-5 rounded-2xl bg-panel border border-border-main shadow-sm hover:shadow-md transition-shadow group flex flex-col md:flex-row md:items-start md:justify-between gap-4">
@@ -439,11 +476,15 @@ export default function Publications() {
                 Ramírez-Aportela E., López-Blanco J.R., Andreu J.M., and Chacón P. (2014). Understanding Nucleotide-Regulated FtsZ Filament Dynamics and the Monomer Assembly Switch with Large-Scale Atomistic Simulations. Biophys J. 107 (9):2164–2176.
               </p>
               <div className="hidden md:flex gap-2 shrink-0">
+                <a href="/pdf/2014_bio.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
+                  PDF
+                </a>
                 <a href="http://www.sciencedirect.com/science/article/pii/S0006349514010078" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-blue/10 text-blue hover:bg-blue/20 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
                   Link
                 </a>
               </div>
               <div className="flex md:hidden gap-2 shrink-0">
+                <a href="/pdf/2014_bio.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-red-50 text-red-600 rounded-lg text-xs font-semibold">PDF</a>
                 <a href="http://www.sciencedirect.com/science/article/pii/S0006349514010078" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-blue/10 text-blue rounded-lg text-xs font-semibold">Link</a>
               </div>
             </li>
@@ -486,11 +527,15 @@ export default function Publications() {
                 López-Blanco J.R., Aliaga J., Quintana-Ortí E. and Chacón P. (2014) iMODS: Internal Coordinates Normal Mode Analysis Server. Nucleic acids research. 42:W271-6
               </p>
               <div className="hidden md:flex gap-2 shrink-0">
+                <a href="/pdf/2014_Imods.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
+                  PDF
+                </a>
                 <a href="http://www.ncbi.nlm.nih.gov/pubmed/24771341" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-blue/10 text-blue hover:bg-blue/20 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors">
                   Link
                 </a>
               </div>
               <div className="flex md:hidden gap-2 shrink-0">
+                <a href="/pdf/2014_Imods.pdf" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-red-50 text-red-600 rounded-lg text-xs font-semibold">PDF</a>
                 <a href="http://www.ncbi.nlm.nih.gov/pubmed/24771341" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-blue/10 text-blue rounded-lg text-xs font-semibold">Link</a>
               </div>
             </li>

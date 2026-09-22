@@ -15,6 +15,17 @@ export default function Research() {
       bgBlur: "bg-blue-500/20"
     },
     {
+      title: "Macromolecular Simulations",
+      description: "Elastic Network Models, Normal Mode Analysis, Dynamic Relaxation, and coarse-grained simulations",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-white">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
+        </svg>
+      ),
+      color: "from-orange-500 to-rose-600",
+      bgBlur: "bg-orange-500/20"
+    },
+    {
       title: "Integrative Modeling",
       description: "Combining multiresolution experimental data (X-ray crystallography, cryo-EM, SAXS) with computational models.",
       icon: (
@@ -24,17 +35,6 @@ export default function Research() {
       ),
       color: "from-emerald-500 to-teal-600",
       bgBlur: "bg-emerald-500/20"
-    },
-    {
-      title: "Macromolecular Dynamics",
-      description: "Normal Mode Analysis, Elastic Network Models, and coarse-grained simulations.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-white">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
-        </svg>
-      ),
-      color: "from-orange-500 to-rose-600",
-      bgBlur: "bg-orange-500/20"
     },
     {
       title: "Protein Modeling",
@@ -103,7 +103,7 @@ export default function Research() {
             </div>
             <div className="w-full md:w-7/12 flex flex-col md:pr-4">
               <span className="inline-block px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 text-xs font-bold tracking-wider uppercase mb-3 self-start">
-                Macromolecular Dynamics
+                Macromolecular Simulations
               </span>
               <h3 className="text-3xl font-extrabold text-slate-800 tracking-tight mb-4">
                 Normal Mode Analysis
@@ -118,7 +118,7 @@ export default function Research() {
           <div className="group relative flex flex-col md:flex-row gap-8 items-center bg-panel rounded-[2rem] p-6 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
             <div className="w-full md:w-5/12 shrink-0 rounded-2xl overflow-hidden bg-black md:order-2 aspect-video md:aspect-[4/3]">
               <video
-                src="/movies/fitting.mp4"
+                src="/movies/tfIId.mp4"
                 autoPlay
                 loop
                 muted

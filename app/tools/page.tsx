@@ -1,78 +1,97 @@
 import React from 'react';
 
+const labelStyles: Record<string, string> = {
+  "Deep Learning & AI": "bg-blue-500/10 text-blue-600 border-blue-200/50",
+  "Macromolecular Simulations": "bg-orange-500/10 text-orange-600 border-orange-200/50",
+  "Integrative Modeling": "bg-emerald-500/10 text-emerald-600 border-emerald-200/50",
+  "Protein Modeling": "bg-purple-500/10 text-purple-600 border-purple-200/50"
+};
+
 export default function Tools() {
   const tools = [
     {
       title: "PiFold2",
       description: "Enhancing the inverse folding approach PiFold",
       url: "https://github.com/chaconlab/PiFold2",
-      isGithub: true
+      isGithub: true,
+      label: "Deep Learning & AI"
     },
     {
       title: "ilMode",
       description: "Constrained NMA for loop modeling",
       url: "https://github.com/chaconlab/ilmode",
-      isGithub: true
+      isGithub: true,
+      label: "Protein Modeling"
     },
     {
       title: "RCD+",
       description: "Efficient loop closure engine for protein loop prediction (rcd.chaconlab.org)",
       url: "https://github.com/chaconlab/RCD",
-      isGithub: true
+      isGithub: true,
+      label: "Protein Modeling"
     },
     {
       title: "KORP",
       description: "Orientational coarse-grained potential for protein & loop modeling",
       url: "https://github.com/chaconlab/Korp",
-      isGithub: true
+      isGithub: true,
+      label: "Protein Modeling"
     },
     {
       title: "KORPM",
       description: "Stability prediction upon mutation",
       url: "https://github.com/chaconlab/korpm",
-      isGithub: true
+      isGithub: true,
+      label: "Protein Modeling"
     },
     {
       title: "KORP-PL",
       description: "Effective coarse-grained knowledge-based scoring function for protein-ligand interactions",
       url: "https://github.com/chaconlab/KORP-PL",
-      isGithub: true
-    },
-    {
-      title: "iMODFIT",
-      description: "Flexible fitting of atomic structures into EM maps",
-      url: "https://github.com/chaconlab/IMODFIT",
-      isGithub: true
-    },
-    {
-      title: "FRODOCK",
-      description: "Structural prediction of protein-protein interactions",
-      url: "https://github.com/chaconlab/FRODOCK",
-      isGithub: true
+      isGithub: true,
+      label: "Protein Modeling"
     },
     {
       title: "iMOD",
       description: "Normal Mode Analysis in internal coordinates",
       url: "https://github.com/chaconlab/IMOD",
-      isGithub: true
+      isGithub: true,
+      label: "Macromolecular Simulations"
     },
     {
-      title: "DalaiGA",
-      description: "Ab initio 3D modeling of Small-angle X-ray scattering (SAXS) profiles. A relic from early 90s",
-      url: "https://github.com/chaconlab/DALAI-GA",
-      isGithub: true
-    },
-    {
-      title: "Situs",
-      description: "Package for the modeling and refinement of multi-scale biomolecular EM structures (external Wriggers' lab)",
-      url: "#",
-      isGithub: false
+      title: "iMODFIT",
+      description: "Flexible fitting of atomic structures into EM maps",
+      url: "https://github.com/chaconlab/IMODFIT",
+      isGithub: true,
+      label: "Integrative Modeling"
     },
     {
       title: "ADP_EM",
       description: "Ultra-fast multiresolution rigid-body fitting tool using spherical harmonics",
       url: "https://github.com/chaconlab/ADP_EM",
-      isGithub: true
+      isGithub: true,
+      label: "Integrative Modeling"
+    },
+    {
+      title: "FRODOCK",
+      description: "Structural prediction of protein-protein interactions",
+      url: "https://github.com/chaconlab/FRODOCK",
+      isGithub: true,
+      label: "Protein Modeling"
+    },
+    {
+      title: "DalaiGA",
+      description: "Ab initio 3D modeling of Small-angle X-ray scattering (SAXS) profiles. A relic from early 90s",
+      url: "https://github.com/chaconlab/DALAI-GA",
+      isGithub: true,
+      label: "Integrative Modeling"
+    },
+    {
+      title: "Situs",
+      description: "Package for the modeling and refinement of multi-scale biomolecular EM structures (external Wriggers' lab)",
+      url: "#",
+      isGithub: false,
+      label: "Integrative Modeling"
     }
   ];
 
@@ -89,11 +108,18 @@ export default function Tools() {
         {tools.map((tool) => (
           <div 
             key={tool.title}
-            className="flex flex-col bg-panel rounded-xl p-6 shadow-sm"
+            className="flex flex-col bg-panel rounded-xl p-6 shadow-sm border border-transparent hover:border-slate-200 transition-all duration-300"
           >
-            <h2 className="text-xl font-bold text-slate-800 tracking-tight mb-3">
-              {tool.title}
-            </h2>
+            <div className="flex items-start justify-between mb-4 gap-3">
+              <h2 className="text-xl font-bold text-slate-800 tracking-tight leading-tight">
+                {tool.title}
+              </h2>
+              {tool.label && (
+                <span className={`shrink-0 px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-widest rounded-full border ${labelStyles[tool.label]}`}>
+                  {tool.label}
+                </span>
+              )}
+            </div>
 
             <p className="text-slate-600 leading-snug text-sm mb-6 flex-1">
               {tool.description}
