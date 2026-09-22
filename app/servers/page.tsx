@@ -25,6 +25,14 @@ export default function Servers() {
       url: "https://frodock.chaconlab.org",
       image: "/servers/frodock-server.jpg",
       color: "from-purple-500/20 to-pink-500/20"
+    },
+    {
+      title: "AbRaCD",
+      subtitle: "CDR loop modeling",
+      description: "AbRaCD is a sampling-based web server for ab initio prediction of antibody complementarity-determining region (CDR) loops, designed to capture antibody-specific conformational features.",
+      url: "https://abracd.chaconlab.org",
+      image: "/servers/abracd-server.jpg",
+      color: "from-amber-500/20 to-orange-500/20"
     }
   ];
 
