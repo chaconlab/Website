@@ -69,42 +69,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Publications / Content Section (Placeholder) */}
-      <section className="mb-24">
-        <h2 className="text-[clamp(1.8rem,3vw,2.4rem)] leading-tight tracking-tight font-bold m-0 text-text-main">
-          Recent Publications
-        </h2>
-        <p className="mt-2.5 max-w-full text-muted leading-relaxed pl-2 mb-10">
-          Explore our latest findings in structural biology and machine learning.
-        </p>
-
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_308px] gap-4">
-          <div className="bg-[rgba(22,124,130,0.06)] border border-[rgba(22,124,130,0.28)] rounded-[28px] flex flex-col md:flex-row items-stretch overflow-visible transition-transform hover:-translate-y-1">
-            <div className="p-6 md:p-8 flex-1 flex flex-col justify-center">
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="inline-flex items-center justify-center rounded-full bg-[rgba(90,141,255,0.12)] text-blue px-3 py-1.5 text-xs font-bold whitespace-nowrap">
-                  Nature
-                </span>
-                <span className="inline-flex items-center justify-center rounded-full bg-[rgba(242,140,111,0.12)] text-accent px-3 py-1.5 text-xs font-bold whitespace-nowrap">
-                  2026
-                </span>
-              </div>
-              <h3 className="font-bold text-[#0f172a] text-xl leading-snug mb-3 hover:text-primary transition-colors cursor-pointer">
-                Multiresolution generative models for large macromolecular complexes.
-              </h3>
-              <p className="text-muted text-sm">
-                Authors: Jane Doe, John Smith, Martin Pacesa, et al.
-              </p>
-            </div>
-            <div className="w-full md:w-[308px] min-h-[200px] bg-white md:rounded-r-[28px] rounded-b-[28px] md:rounded-bl-none border-t md:border-t-0 md:border-l border-border-main p-4 flex items-center justify-center relative overflow-hidden">
-               {/* Decorative structural placeholder */}
-               <div className="w-32 h-32 rounded-full border-4 border-primary/20 absolute"></div>
-               <div className="w-16 h-16 rounded-full bg-accent/20 absolute -translate-x-8 translate-y-8"></div>
-               <div className="text-center text-muted font-bold z-10 text-sm">Figure Placeholder</div>
-            </div>
-          </div>
-        </div>
-      </section>
 
     </div>
   );
