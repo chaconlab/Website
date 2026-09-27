@@ -9,6 +9,11 @@ export default function Contact() {
         <div className="prose prose-lg prose-slate max-w-none">
           <p className="text-lg text-slate-600 mb-8">
             We are at the <strong>Blas Cabrera Institute of Physical Chemistry (IQF)</strong> in Madrid.
+            <br /><br />
+            Here you can find the exact location and <a href="http://www.metromadrid.es/en/viaja_en_metro/red_de_metro/planos/index.html" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">how to reach us</a> using public transportation:<br />
+            <strong>Metro:</strong> República Argentina (L6) or Nuevos Ministerios (L6, L8, L10)<br />
+            <strong>Train (Cercanías):</strong> Nuevos Ministerios<br />
+            <strong>Bus:</strong> Lines 16, 19, 51
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 bg-slate-50/80 rounded-2xl mb-8 border border-slate-100">
@@ -45,16 +50,6 @@ export default function Contact() {
               For more information about our institute, visit the <a href="http://www.iqf.csic.es/en/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">IQF website</a>.
             </p>
             
-            <div>
-              <p className="mb-2">
-                Here you can find the exact location and <a href="http://www.metromadrid.es/en/viaja_en_metro/red_de_metro/planos/index.html" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">how to reach us</a> using public transportation:
-              </p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li><strong>Metro:</strong> República Argentina (L6) or Nuevos Ministerios (L6, L8, L10)</li>
-                <li><strong>Train (Cercanías):</strong> Nuevos Ministerios</li>
-                <li><strong>Bus:</strong> Lines 16, 19, 51</li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
