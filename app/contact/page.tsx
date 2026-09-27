@@ -45,9 +45,16 @@ export default function Contact() {
               For more information about our institute, visit the <a href="http://www.iqf.csic.es/en/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">IQF website</a>.
             </p>
             
-            <p>
-              Here you can find the exact location and <a href="http://www.metromadrid.es/en/viaja_en_metro/red_de_metro/planos/index.html" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">how to reach us</a> using public transportation.
-            </p>
+            <div>
+              <p className="mb-2">
+                Here you can find the exact location and <a href="http://www.metromadrid.es/en/viaja_en_metro/red_de_metro/planos/index.html" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">how to reach us</a> using public transportation:
+              </p>
+              <ul className="list-disc pl-5 space-y-1">
+                <li><strong>Metro:</strong> República Argentina (L6) or Nuevos Ministerios (L6, L8, L10)</li>
+                <li><strong>Train (Cercanías):</strong> Nuevos Ministerios</li>
+                <li><strong>Bus:</strong> Lines 16, 19, 51</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
