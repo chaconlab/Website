@@ -8,78 +8,51 @@ export default function PdbViewer({ url }: { url: string }) {
   const [scriptLoaded, setScriptLoaded] = useState(false);
 
   useEffect(() => {
-    // If script is already globally available but state isn't updated yet
-    if (!scriptLoaded && typeof window !== 'undefined' && (window as any).$3Dmol) {
-      setScriptLoaded(true);
-      return;
-    }
-
-    if (!scriptLoaded || !viewerRef.current) return;
+    if (!scriptLoaded || !viewerRef.current || typeof window === 'undefined') return;
     
-    // Prevent double initialization in React Strict Mode which crashes WebGL
-    if (viewerRef.current.innerHTML !== "") {
-      viewerRef.current.innerHTML = "";
-    }
-    
-    let viewer: any = null;
+    if ((window as any).PDBeMolstarPlugin) {
+      if (viewerRef.current.innerHTML !== "") {
+        viewerRef.current.innerHTML = "";
+      }
 
-    if (typeof window !== 'undefined' && (window as any).$3Dmol) {
+      const viewerInstance = new (window as any).PDBeMolstarPlugin();
+
+      const options = {
+        customData: {
+          url: url,
+          format: 'pdb'
+        },
+        bgColor: { r: 255, g: 255, b: 255 },
+        hideControls: false,
+        hideIcon: true,
+        visualStyle: 'cartoon',
+        sequencePanel: true // helpful for structural analysis
+      };
+
       try {
-        viewer = (window as any).$3Dmol.createViewer(viewerRef.current, {
-          backgroundColor: 'white'
-        });
-        
-        fetch(url)
-          .then(res => {
-            if (!res.ok) throw new Error("Failed to load PDB file");
-            return res.text();
-          })
-          .then(data => {
-            if (!viewer) return;
-            viewer.addModelsAsFrames(data, "pdb");
-            viewer.setStyle({}, { cartoon: { color: 'spectrum' } });
-            viewer.zoomTo();
-            viewer.zoom(1.2);
-            viewer.animate({ loop: 'forward', step: 5 });
-            viewer.render();
-          })
-          .catch(err => console.error("Error loading PDB for viewer:", err));
+        viewerInstance.render(viewerRef.current, options);
       } catch (err) {
-        console.error("Error initializing 3Dmol viewer:", err);
+        console.error("Error initializing PDBe Molstar", err);
       }
     }
-
-    // Cleanup function on unmount
-    return () => {
-      if (viewer) {
-        viewer.removeAllModels();
-      }
-    };
   }, [scriptLoaded, url]);
 
   return (
-    <div className="relative w-full aspect-video md:aspect-[4/3] bg-white overflow-hidden group cursor-move">
-      {/* Load script immediately after page becomes interactive */}
+    <div className="relative w-full aspect-video md:aspect-[4/3] bg-white overflow-hidden group">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pdbe-molstar@3.3.0/build/pdbe-molstar-light.css" />
+      
       <Script 
-        src="https://3Dmol.org/build/3Dmol-min.js" 
+        src="https://cdn.jsdelivr.net/npm/pdbe-molstar@3.3.0/build/pdbe-molstar-plugin.js" 
         strategy="afterInteractive"
         onLoad={() => setScriptLoaded(true)}
       />
       
-      {/* Viewer Container */}
+      {/* Viewer Container needs to be relative to contain the molstar absolute UI */}
       <div ref={viewerRef} className="absolute inset-0 w-full h-full z-10"></div>
       
-      {/* Loading skeleton / placeholder shown before initialization */}
       {!scriptLoaded && (
         <div className="absolute inset-0 bg-slate-100 animate-pulse z-0 flex items-center justify-center">
-          <span className="text-slate-400 font-medium tracking-widest uppercase text-sm">Loading 3D Viewer...</span>
-        </div>
-      )}
-
-      {/* Interactive Overlay Hint */}
-      {scriptLoaded && (
-        <div className="absolute top-3 right-3 z-20 pointer-events-none bg-white/80 backdrop-blur-sm px-2 py-1 rounded shadow-sm opacity-0 group-hover:opacity-100 transition-opacity">
-          <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Drag to rotate</span>
+          <span className="text-slate-400 font-medium tracking-widest uppercase text-sm">Loading Mol* Viewer...</span>
         </div>
       )}
     </div>
