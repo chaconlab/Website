@@ -1,5 +1,6 @@
 import React from 'react';
 import PdbViewer from './PdbViewer';
+import TrajectoryViewer from './TrajectoryViewer';
 
 export default function Research() {
   const topics = [
@@ -87,6 +88,24 @@ export default function Research() {
       {/* --- Research Highlights Section --- */}
       <div className="mt-24 mb-10">
         <div className="space-y-12">
+          {/* Highlight 0: AI Protein Design (Reverse layout) */}
+          <div className="group relative flex flex-col md:flex-row gap-8 items-center bg-panel rounded-[2rem] p-6 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+            <div className="w-full md:w-5/12 shrink-0 rounded-2xl overflow-hidden bg-white md:order-2 aspect-video md:aspect-[4/3]">
+              <TrajectoryViewer url="/movies/traj_design3.pdb" />
+            </div>
+            <div className="w-full md:w-7/12 flex flex-col md:pl-4 md:order-1">
+              <span className="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-blue-600 text-xs font-bold tracking-wider uppercase mb-3 self-start">
+                Deep Learning &amp; AI
+              </span>
+              <h3 className="text-3xl font-extrabold text-slate-800 tracking-tight mb-4">
+                AI Protein Design
+              </h3>
+              <p className="text-slate-600 leading-relaxed text-lg mb-6">
+                We develop generative deep learning models, built on geometric algebra, flow matching and diffusion, to design new proteins from scratch. Instead of only predicting how known sequences fold, these models create novel structures and sequences tailored to a target shape or function.
+              </p>
+            </div>
+          </div>
+
           {/* Highlight 1: Macromolecular Dynamics */}
           <div className="group relative flex flex-col md:flex-row gap-8 items-center bg-panel rounded-[2rem] p-6 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
             <div className="w-full md:w-5/12 shrink-0 rounded-2xl overflow-hidden bg-black aspect-video md:aspect-[4/3]">
