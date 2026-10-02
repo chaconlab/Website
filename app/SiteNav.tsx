@@ -14,7 +14,8 @@ const links = [
 ];
 
 export default function SiteNav() {
-  const pathname = usePathname();
+  // Pages are exported with trailing slashes (/team/), links are written without
+  const pathname = usePathname().replace(/(.)\/$/, '$1');
   const [open, setOpen] = useState(false);
 
   return (

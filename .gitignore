@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# deploy settings template (the real .env.deploy stays ignored by .env*)
+!.env.deploy.example
