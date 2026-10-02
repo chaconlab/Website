@@ -65,26 +65,26 @@ export default function Research() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         {topics.map((topic) => (
           <a
             key={topic.title}
             href={`#${topic.anchor}`}
-            className="group relative flex flex-col bg-panel border border-border-main rounded-2xl p-5 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 overflow-hidden"
+            className="group relative flex flex-col bg-panel border border-border-main rounded-2xl p-3.5 sm:p-5 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 overflow-hidden"
           >
             {/* Background ambient glow */}
             <div className={`absolute -bottom-16 -right-16 w-40 h-40 ${topic.bgBlur} rounded-full blur-[50px] -z-10`} />
 
-            <div className="flex items-center gap-3 mb-3">
-              <div className={`w-10 h-10 shrink-0 rounded-xl bg-gradient-to-br ${topic.color} flex items-center justify-center shadow-sm`}>
+            <div className="flex items-center gap-2.5 sm:gap-3 sm:mb-3">
+              <div className={`w-8 h-8 sm:w-10 sm:h-10 shrink-0 rounded-xl bg-gradient-to-br ${topic.color} flex items-center justify-center shadow-sm`}>
                 {topic.icon}
               </div>
-              <h2 className="text-base font-extrabold text-slate-800 tracking-tight leading-tight m-0">
+              <h2 className="text-[13px] sm:text-base font-extrabold text-slate-800 tracking-tight leading-tight m-0">
                 {topic.title}
               </h2>
             </div>
 
-            <p className="text-slate-600 leading-relaxed text-sm flex-1 m-0">
+            <p className="hidden sm:block text-slate-600 leading-relaxed text-sm flex-1 m-0">
               {topic.description}
             </p>
           </a>
@@ -95,7 +95,7 @@ export default function Research() {
       <div className="mt-14 mb-10">
         <div className="space-y-8">
           {/* Highlight 0: AI Protein Design (Reverse layout) */}
-          <div id="ai-protein-design" className="scroll-mt-28 group relative flex flex-col md:flex-row gap-8 items-center bg-panel rounded-[2rem] p-6 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+          <div id="ai-protein-design" className="scroll-mt-28 group relative flex flex-col md:flex-row gap-5 md:gap-8 items-center bg-panel rounded-[2rem] p-4 sm:p-6 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
             <div className="w-full md:w-5/12 shrink-0 rounded-2xl overflow-hidden bg-white md:order-2 aspect-video md:aspect-[4/3]">
               <TrajectoryViewer url="/movies/traj_design3.pdb" />
             </div>
@@ -103,17 +103,17 @@ export default function Research() {
               <span className="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-blue-600 text-xs font-bold tracking-wider uppercase mb-3 self-start">
                 Deep Learning &amp; AI
               </span>
-              <h3 className="text-3xl font-extrabold text-slate-800 tracking-tight mb-4">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight mb-3 sm:mb-4">
                 AI Protein Design
               </h3>
-              <p className="text-slate-600 leading-relaxed text-lg mb-6">
+              <p className="text-slate-600 leading-relaxed text-base sm:text-lg mb-2 sm:mb-6">
                 We develop generative deep learning models, built on geometric algebra, flow matching and diffusion, to design new proteins from scratch. Instead of only predicting how known sequences fold, these models create novel structures and sequences tailored to a target shape or function.
               </p>
             </div>
           </div>
 
           {/* Highlight 1: Macromolecular Dynamics */}
-          <div id="normal-mode-analysis" className="scroll-mt-28 group relative flex flex-col md:flex-row gap-8 items-center bg-panel rounded-[2rem] p-6 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+          <div id="normal-mode-analysis" className="scroll-mt-28 group relative flex flex-col md:flex-row gap-5 md:gap-8 items-center bg-panel rounded-[2rem] p-4 sm:p-6 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
             <div className="w-full md:w-5/12 shrink-0 rounded-2xl overflow-hidden bg-white aspect-video md:aspect-[4/3]">
               <video
                 src="/movies/nma.mp4"
@@ -130,17 +130,17 @@ export default function Research() {
               <span className="inline-block px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 text-xs font-bold tracking-wider uppercase mb-3 self-start">
                 Macromolecular Simulations
               </span>
-              <h3 className="text-3xl font-extrabold text-slate-800 tracking-tight mb-4">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight mb-3 sm:mb-4">
                 Normal Mode Analysis
               </h3>
-              <p className="text-slate-600 leading-relaxed text-lg mb-6">
+              <p className="text-slate-600 leading-relaxed text-base sm:text-lg mb-2 sm:mb-6">
                 Visualizing the collective motions of protein structures using our highly efficient Normal Mode Analysis (NMA) tools. These simulations reveal intrinsic flexibility essential for biological function without the computational cost of full MD simulations.
               </p>
             </div>
           </div>
 
           {/* Highlight 2: Integrative Modeling (Reverse layout) */}
-          <div id="cryo-em-fitting" className="scroll-mt-28 group relative flex flex-col md:flex-row gap-8 items-center bg-panel rounded-[2rem] p-6 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+          <div id="cryo-em-fitting" className="scroll-mt-28 group relative flex flex-col md:flex-row gap-5 md:gap-8 items-center bg-panel rounded-[2rem] p-4 sm:p-6 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
             <div className="w-full md:w-5/12 shrink-0 rounded-2xl overflow-hidden bg-white md:order-2 aspect-video md:aspect-[4/3]">
               <video
                 src="/movies/tfIId.mp4"
@@ -157,17 +157,17 @@ export default function Research() {
               <span className="inline-block px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 text-xs font-bold tracking-wider uppercase mb-3 self-start">
                 Integrative Modeling
               </span>
-              <h3 className="text-3xl font-extrabold text-slate-800 tracking-tight mb-4">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight mb-3 sm:mb-4">
                 Flexible Fitting into Cryo-EM
               </h3>
-              <p className="text-slate-600 leading-relaxed text-lg mb-6">
+              <p className="text-slate-600 leading-relaxed text-base sm:text-lg mb-2 sm:mb-6">
                 Our hybrid methods bridge the resolution gap by flexibly fitting high-resolution atomic structures into lower-resolution electron microscopy density maps, providing detailed atomistic models of large molecular machines.
               </p>
             </div>
           </div>
 
           {/* Highlight 3: Protein Modeling */}
-          <div id="loop-modeling" className="scroll-mt-28 group relative flex flex-col md:flex-row gap-8 items-center bg-panel rounded-[2rem] p-6 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+          <div id="loop-modeling" className="scroll-mt-28 group relative flex flex-col md:flex-row gap-5 md:gap-8 items-center bg-panel rounded-[2rem] p-4 sm:p-6 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
             <div className="w-full md:w-5/12 shrink-0 rounded-2xl overflow-hidden relative bg-white aspect-video md:aspect-[4/3]">
               <PdbViewer url="/movies/loops.pdb" />
             </div>
@@ -175,10 +175,10 @@ export default function Research() {
               <span className="inline-block px-3 py-1 rounded-full bg-purple-500/10 text-purple-600 text-xs font-bold tracking-wider uppercase mb-3 self-start">
                 Protein Modeling
               </span>
-              <h3 className="text-3xl font-extrabold text-slate-800 tracking-tight mb-4">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight mb-3 sm:mb-4">
                 Ab initio Loop Modeling
               </h3>
-              <p className="text-slate-600 leading-relaxed text-lg mb-6">
+              <p className="text-slate-600 leading-relaxed text-base sm:text-lg mb-2 sm:mb-6">
                 Explore an interactively rendered 3D prediction generated by our fast loop-closure modeling tool. Accurate all-atom loop predictions are critical for structural refinement and antibody design.
               </p>
             </div>

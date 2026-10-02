@@ -54,33 +54,33 @@ export default function Contact() {
       <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-6 lg:gap-8">
         {/* Contact details */}
         <div className="flex flex-col gap-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="bg-panel border border-border-main rounded-3xl p-6 shadow-sm">
+          <div className="grid grid-cols-2 gap-3 sm:gap-6">
+            <div className="bg-panel border border-border-main rounded-3xl p-4 sm:p-6 shadow-sm">
               <IconBadge>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </IconBadge>
               <h2 className="mt-4 mb-2 text-xs font-bold text-slate-400 uppercase tracking-widest">Address</h2>
-              <p className="font-medium text-text-main m-0 leading-relaxed">
+              <p className="text-sm sm:text-base font-medium text-text-main m-0 leading-relaxed">
                 C/ Serrano 119<br />
                 28006 Madrid<br />
                 Spain
               </p>
             </div>
 
-            <div className="bg-panel border border-border-main rounded-3xl p-6 shadow-sm">
+            <div className="bg-panel border border-border-main rounded-3xl p-4 sm:p-6 shadow-sm">
               <IconBadge>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </IconBadge>
               <h2 className="mt-4 mb-2 text-xs font-bold text-slate-400 uppercase tracking-widest">Phone</h2>
-              <p className="font-medium text-text-main m-0 leading-relaxed">
-                (+34) 91 561 9400<br />
+              <p className="text-sm sm:text-base font-medium text-text-main m-0 leading-relaxed">
+                <span className="whitespace-nowrap">(+34) 91 561 9400</span><br />
                 <span className="text-muted">ext. 44116 (lab)</span>
               </p>
             </div>
           </div>
 
-          <div className="bg-panel border border-border-main rounded-3xl p-6 shadow-sm">
+          <div className="bg-panel border border-border-main rounded-3xl p-4 sm:p-6 shadow-sm">
             <div className="flex items-center gap-3">
               <IconBadge>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8 7h8m-8 4h8m-9 8l-2 2m12-2l2 2M7 3h10a2 2 0 012 2v10a4 4 0 01-4 4H9a4 4 0 01-4-4V5a2 2 0 012-2z" />

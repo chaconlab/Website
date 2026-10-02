@@ -6,7 +6,7 @@ export default function Home() {
     <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 pt-6 pb-10 md:pt-8 md:pb-16">
       
       {/* Hero Section */}
-      <section className="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-10 items-center mb-24">
+      <section className="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-8 md:gap-10 items-center mb-12 md:mb-24">
         <div>
           <h1 className="text-[clamp(1.75rem,3vw,2.25rem)] leading-[1.1] tracking-tight font-black m-0 text-text-main">
             Decoding <br />
@@ -19,11 +19,11 @@ export default function Home() {
             We fuse deep learning, geometric algebras, and multiresolution data to model complex biomolecular assemblies and pioneer new architectures for protein design.
           </p>
           
-          <div className="flex flex-wrap gap-3.5 mt-8">
-            <Link href="/research" className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full font-bold bg-primary text-white shadow-panel hover:-translate-y-0.5 transition-transform">
+          <div className="flex flex-wrap gap-2.5 sm:gap-3.5 mt-6 sm:mt-8">
+            <Link href="/research" className="inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-3 sm:py-3.5 text-sm sm:text-base rounded-full font-bold bg-primary text-white shadow-panel hover:-translate-y-0.5 transition-transform">
               Explore Research
             </Link>
-            <Link href="/tools" className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full font-bold bg-white text-blue border border-[rgba(90,141,255,0.25)] hover:-translate-y-0.5 transition-transform">
+            <Link href="/tools" className="inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-3 sm:py-3.5 text-sm sm:text-base rounded-full font-bold bg-white text-blue border border-[rgba(90,141,255,0.25)] hover:-translate-y-0.5 transition-transform">
               View Open Source
             </Link>
           </div>

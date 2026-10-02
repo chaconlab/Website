@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
+import SiteNav from "./SiteNav";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -27,38 +28,19 @@ export default function RootLayout({
         </div>
         
         <header className="site-header">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="flex items-center justify-between py-4">
+          <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+            <div className="flex items-center justify-between py-3 md:py-4">
               <Link href="/" className="flex items-center gap-3 group transition">
-                <img src="/logo.png" alt="Chacon Lab Logo" className="w-[60px] h-[60px] object-contain group-hover:scale-105 transition-transform duration-250" />
+                <img src="/logo.png" alt="Chacon Lab Logo" className="w-11 h-11 md:w-[60px] md:h-[60px] object-contain group-hover:scale-105 transition-transform duration-250" />
                 <div className="flex flex-col">
-                  <span className="font-black text-[28px] tracking-tight leading-none text-text-main relative group-hover:-translate-y-[1px] transition-transform">
+                  <span className="font-black text-[22px] md:text-[28px] tracking-tight leading-none text-text-main relative group-hover:-translate-y-[1px] transition-transform">
                     Chacon Lab
                   </span>
-                  <span className="text-[10px] text-muted tracking-widest uppercase mt-1 font-semibold">Structural Bioinformatics Group</span>
+                  <span className="text-[9px] md:text-[10px] text-muted tracking-widest uppercase mt-1 font-semibold">Structural Bioinformatics Group</span>
                 </div>
               </Link>
               
-              <nav className="hidden md:flex items-center gap-1">
-                <Link href="/research" className="px-3 lg:px-4 py-2.5 rounded-full text-slate-700 hover:bg-primary hover:text-white transition-all font-semibold text-[14px] lg:text-[15px] hover:shadow-panel">
-                  Research
-                </Link>
-                <Link href="/publications" className="px-3 lg:px-4 py-2.5 rounded-full text-slate-700 hover:bg-primary hover:text-white transition-all font-semibold text-[14px] lg:text-[15px] hover:shadow-panel">
-                  Publications
-                </Link>
-                <Link href="/team" className="px-3 lg:px-4 py-2.5 rounded-full text-slate-700 hover:bg-primary hover:text-white transition-all font-semibold text-[14px] lg:text-[15px] hover:shadow-panel">
-                  Team
-                </Link>
-                <Link href="/tools" className="px-3 lg:px-4 py-2.5 rounded-full text-slate-700 hover:bg-primary hover:text-white transition-all font-semibold text-[14px] lg:text-[15px] hover:shadow-panel">
-                  Tools
-                </Link>
-                <Link href="/servers" className="px-3 lg:px-4 py-2.5 rounded-full text-slate-700 hover:bg-primary hover:text-white transition-all font-semibold text-[14px] lg:text-[15px] hover:shadow-panel">
-                  Servers
-                </Link>
-                <Link href="/contact" className="px-3 lg:px-4 py-2.5 rounded-full text-slate-700 hover:bg-primary hover:text-white transition-all font-semibold text-[14px] lg:text-[15px] hover:shadow-panel">
-                  Contact
-                </Link>
-              </nav>
+              <SiteNav />
             </div>
           </div>
         </header>
