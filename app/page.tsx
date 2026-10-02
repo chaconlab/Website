@@ -3,12 +3,12 @@ import HighlightsCarousel from './HighlightsCarousel';
 
 export default function Home() {
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 py-10 md:py-16">
+    <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 pt-6 pb-10 md:pt-8 md:pb-16">
       
       {/* Hero Section */}
       <section className="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-10 items-center mb-24">
         <div>
-          <h1 className="text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight font-black m-0 text-text-main">
+          <h1 className="text-[clamp(1.75rem,3vw,2.25rem)] leading-[1.1] tracking-tight font-black m-0 text-text-main">
             Decoding <br />
             <span className="text-primary">
               structure

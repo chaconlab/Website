@@ -41,9 +41,9 @@ function IconBadge({ children }: { children: React.ReactNode }) {
 
 export default function Contact() {
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 py-10 md:py-16">
+    <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 pt-6 pb-10 md:pt-8 md:pb-16">
       <div className="mb-12">
-        <h1 className="text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight font-black m-0 text-text-main">
+        <h1 className="text-[clamp(1.75rem,3vw,2.25rem)] leading-[1.1] tracking-tight font-black m-0 text-text-main">
           Get in <span className="text-primary">touch</span>.
         </h1>
         <p className="mt-6 text-[clamp(1rem,1.6vw,1.15rem)] text-muted max-w-[760px] leading-relaxed">

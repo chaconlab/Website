@@ -6,12 +6,16 @@ const highlights = [
     title: 'Protein Design',
     text: 'Advanced deep learning models for de novo design methods.',
     video: '/movies/mol3.webm',
+    zoom: 1.4,
+    fit: 'object-cover',
     dot: 'bg-primary',
   },
   {
     title: 'Macromolecular Simulations',
     text: 'Pioneering dynamic relaxation methods for macromolecular motions.',
-    video: null,
+    video: '/movies/atpasa.mp4',
+    zoom: 1,
+    fit: 'object-contain', // tall complex: show the whole frame
     dot: 'bg-accent',
   },
 ];
@@ -58,7 +62,8 @@ export default function HighlightsCarousel() {
                     loop
                     muted
                     playsInline
-                    className={`w-full h-full object-cover scale-[1.4] origin-center mix-blend-multiply ${fade}`}
+                    style={{ transform: `scale(${h.zoom})` }}
+                    className={`w-full h-full ${h.fit} origin-center mix-blend-multiply ${fade}`}
                   />
                 </div>
               )}

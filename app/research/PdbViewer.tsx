@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { loadMolstar, MINIMAL_UI_OPTIONS, MINIMAL_UI_CLASSES, hideAxes, animateModels } from './molstar';
 
 // Initial view: molecule rotation in screen axes (degrees, Y applied first) and zoom factor
-const VIEW = { rotateY: 180, rotateZ: -90, zoom: 1.5 };
+const VIEW = { rotateY: 225, rotateZ: -180, zoom: 1.5 };
 
 type Vec3 = [number, number, number];
 const sub = (a: Vec3, b: Vec3): Vec3 => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];
