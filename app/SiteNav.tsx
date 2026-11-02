@@ -21,12 +21,12 @@ export default function SiteNav() {
   return (
     <>
       {/* Desktop */}
-      <nav className="hidden md:flex items-center gap-1">
+      <nav className="hidden lg:flex items-center gap-1">
         {links.map((link) => (
           <Link
             key={link.href}
             href={link.href}
-            className={`px-3 lg:px-4 py-2.5 rounded-full transition-all font-semibold text-[14px] lg:text-[15px] hover:bg-primary hover:text-white hover:shadow-panel ${
+            className={`px-4 py-2.5 rounded-full transition-all font-semibold text-[17px] hover:bg-primary hover:text-white hover:shadow-panel ${
               pathname === link.href ? 'bg-primary/10 text-primary' : 'text-slate-700'
             }`}
           >
@@ -42,7 +42,7 @@ export default function SiteNav() {
         aria-expanded={open}
         aria-controls="mobile-menu"
         aria-label={open ? 'Close menu' : 'Open menu'}
-        className="md:hidden flex items-center justify-center w-11 h-11 rounded-full text-slate-700 hover:bg-primary/10 transition-colors"
+        className="lg:hidden flex items-center justify-center w-11 h-11 rounded-full text-slate-700 hover:bg-primary/10 transition-colors"
       >
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           {open ? (
@@ -56,7 +56,7 @@ export default function SiteNav() {
       <nav
         id="mobile-menu"
         hidden={!open}
-        className="md:hidden absolute left-0 right-0 top-full px-4 pb-4"
+        className="lg:hidden absolute left-0 right-0 top-full px-4 pb-4"
       >
         <div className="flex flex-col gap-1 bg-panel border border-border-main rounded-2xl shadow-panel p-2">
           {links.map((link) => (
@@ -64,7 +64,7 @@ export default function SiteNav() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className={`px-4 py-3 rounded-xl font-semibold text-[15px] transition-colors ${
+              className={`px-4 py-3 rounded-xl font-semibold text-[17px] transition-colors ${
                 pathname === link.href ? 'bg-primary/10 text-primary' : 'text-slate-700 hover:bg-slate-50'
               }`}
             >

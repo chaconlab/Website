@@ -1,7 +1,18 @@
 'use client';
 import { useState, useEffect } from 'react';
 
-const highlights = [
+type Highlight = {
+  title: string;
+  text: string;
+  dot: string;
+  video?: string;
+  zoom?: number;
+  fit?: string;
+  image?: string;
+  link?: string;
+};
+
+const highlights: Highlight[] = [
   {
     title: 'Protein Design',
     text: 'Advanced deep learning models for de novo design methods.',
@@ -17,6 +28,13 @@ const highlights = [
     zoom: 1,
     fit: 'object-contain', // tall complex: show the whole frame
     dot: 'bg-accent',
+  },
+  {
+    title: 'BCB Hub',
+    text: 'Check our Bioinformatics & Computational Biology Hub.',
+    image: '/highlights/bcbhub.jpg',
+    link: 'https://bcbhub.csic.es/',
+    dot: 'bg-blue',
   },
 ];
 
@@ -54,6 +72,23 @@ export default function HighlightsCarousel() {
               <div className={`ml-5 mt-2 text-muted text-sm leading-relaxed ${fade}`}>
                 {h.text}
               </div>
+              {h.image && (
+                <a
+                  href={h.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  tabIndex={i === index ? 0 : -1}
+                  // 85% of the movie boxes' size (h-48)
+                  className={`group block mt-3 mx-auto w-[85%] h-[10.2rem] overflow-hidden rounded-xl border border-border-main ${fade}`}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element -- static export, no image optimizer */}
+                  <img
+                    src={h.image}
+                    alt={`${h.title} website`}
+                    className="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-500"
+                  />
+                </a>
+              )}
               {h.video && (
                 <div className="mt-3 h-48 overflow-hidden rounded-xl">
                   <video

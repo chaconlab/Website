@@ -48,6 +48,22 @@ export default function RootLayout({
         <main className="flex-1 flex flex-col">
           {children}
         </main>
+
+        <footer className="border-t border-border-main">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between text-sm text-muted">
+            <p className="m-0">
+              <a
+                href="https://bcbhub.csic.es/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-primary hover:underline"
+              >
+                CSIC Bioinformatics &amp; Computational Biology Hub (BCBHub)
+              </a>
+            </p>
+            <p className="m-0">Chacon Lab · IQF-CSIC, Madrid</p>
+          </div>
+        </footer>
       </body>
     </html>
   );
