@@ -85,7 +85,7 @@ export default function HighlightsCarousel() {
                   <img
                     src={h.image}
                     alt={`${h.title} website`}
-                    className="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-500"
+                    className="w-full h-full object-cover object-bottom group-hover:scale-[1.03] transition-transform duration-500"
                   />
                 </a>
               )}
